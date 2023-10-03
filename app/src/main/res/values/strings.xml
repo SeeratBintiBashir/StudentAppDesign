@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StudentAppDesign</string>
+    <string name="my_button_text">Add New Student</string>
+</resources>
