@@ -49,14 +49,14 @@ class MainActivity : AppCompatActivity() {
 
         button1.setOnClickListener {
             formLayout.visibility = View.VISIBLE
-            frontLayout.visibility = View.INVISIBLE
+            frontLayout.visibility = View.GONE
 
         }
 
         button2.setOnClickListener {
             recyclerView.visibility = View.VISIBLE
-            formLayout.visibility = View.INVISIBLE
-
+            frontLayout.visibility = View.VISIBLE
+            formLayout.visibility = View.GONE
             val name = editName.text.toString()
             val phoneNumber = editPhoneNumber.text.toString()
             val address = editAddress.text.toString()
@@ -67,6 +67,8 @@ class MainActivity : AppCompatActivity() {
                 adapter.notifyDataSetChanged()
                 clearForm()
             }
+
+
 
         }
     }
